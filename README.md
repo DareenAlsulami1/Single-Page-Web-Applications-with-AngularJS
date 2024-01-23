@@ -8,4 +8,4 @@ To open my repository using browser sync
 
 after apply any modifying on files, apply this : 
 on project file >> git add .
-check >> git status 
+git commit -m "file web pages 2"
