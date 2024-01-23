@@ -7,5 +7,7 @@ To open my repository using browser sync
 
 
 after apply any modifying on files, apply this : 
-on project file >> git add .
+on project file >> 
+git add . or git add "file name"
 git commit -m "file web pages 2"
+git push 
