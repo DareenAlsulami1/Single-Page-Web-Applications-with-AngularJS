@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min copy.js"></script>
+    <script src="app.js"></script>
     <title>Calculater Name</title>
 </head>
-<body>
-    
+<body ng-app="CalculatorApp">
+    <h1>Name Calculator</h1>
+        <!-- put controller at body tag, so every thing happen at body scope  -->
+    <div ng-controller="CalculatorController">
+
+        <div>
+            <!-- ng-model >> to show name varible value 
+            ng-keyu >> to keep track and use function that written at  -->
+            your name: <input type="text" ng-model="name"
+            ng-keyup="displayNumric();">
+        </div>
+
+        <!-- this div show variable totalValue  -->
+        <div>Total numric value of person's name is: {{totalValue}}</div>
+    </div>
+
+
 </body>
 </html>
