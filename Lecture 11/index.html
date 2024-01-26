@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Msgapp">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lecture 11</title>
+</head>
+<body>
+    <h1>Expression and Interpolation</h1>
+
+    <div ng-controller="MsgController">
+        
+        <div>
+            
+            <button ng-click="feedFifi()">feed fifi</button>
+            <br><br>
+            <img ng-src="images/fifi_{{stateOfBeing}}.jpeg" style="width: 400px;">
+        </div>
+    </div>
+</body>
+</html>
