@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Assinament1App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Assignament 1 solution </title>
+</head>
+<body ng-controller="Assig1Conroller">
+    <div class="container" >
+        <h1>Lunch Checker</h1>
+                  
+            <div class="form-group">
+                <input id="lunch-menu" type="text"
+                placeholder="list comma separated dishes you usually have for lunch"
+                class="form-control" ng-model="items">
+
+                
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" ng-click="checkitems()">Check If Too Much</button>
+            </div>
+            <div class="form-group message">
+              <!-- Your message can go here. -->
+              {{output}}
+            </div>
+      </div>
+</body>
+</html>
