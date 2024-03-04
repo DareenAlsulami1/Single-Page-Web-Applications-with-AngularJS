@@ -11,10 +11,11 @@
     <h1>Expression and Interpolation</h1>
 
     <div ng-controller="MsgController">
-        
+       {{saymsg()}} 
         <div>
             
             <button ng-click="feedFifi()">feed fifi</button>
+            cost : {{foodCost | currency :  "fifo " :2 }}
             <br><br>
             <img ng-src="images/fifi_{{stateOfBeing}}.jpeg" style="width: 400px;">
         </div>
